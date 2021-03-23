@@ -3,19 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F15E0528BF270C5703B67A5 /* Pods_RolloutTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51379C7C1C8E2E7D8A779897 /* Pods_RolloutTest.framework */; };
 		9C1E4551260902F3005C8019 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1E4550260902F3005C8019 /* AppDelegate.swift */; };
 		9C1E4553260902F3005C8019 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1E4552260902F3005C8019 /* SceneDelegate.swift */; };
 		9C1E4555260902F3005C8019 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1E4554260902F3005C8019 /* ViewController.swift */; };
 		9C1E4558260902F3005C8019 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C1E4556260902F3005C8019 /* Main.storyboard */; };
 		9C1E455A260902F6005C8019 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C1E4559260902F6005C8019 /* Assets.xcassets */; };
 		9C1E455D260902F6005C8019 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C1E455B260902F6005C8019 /* LaunchScreen.storyboard */; };
+		9C1E456A2609035A005C8019 /* FeatureFlagging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1E45692609035A005C8019 /* FeatureFlagging.swift */; };
+		9C1E47BF2609CDE4005C8019 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1E47BE2609CDE4005C8019 /* ChatViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0536E9A852825E168AFD24EF /* Pods-RolloutTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RolloutTest.debug.xcconfig"; path = "Target Support Files/Pods-RolloutTest/Pods-RolloutTest.debug.xcconfig"; sourceTree = "<group>"; };
+		36FAF0A1A8A443819077D04D /* Pods-RolloutTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RolloutTest.release.xcconfig"; path = "Target Support Files/Pods-RolloutTest/Pods-RolloutTest.release.xcconfig"; sourceTree = "<group>"; };
+		51379C7C1C8E2E7D8A779897 /* Pods_RolloutTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RolloutTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C1E454D260902F3005C8019 /* RolloutTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RolloutTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C1E4550260902F3005C8019 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C1E4552260902F3005C8019 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,8 @@
 		9C1E4559260902F6005C8019 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C1E455C260902F6005C8019 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C1E455E260902F6005C8019 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C1E45692609035A005C8019 /* FeatureFlagging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureFlagging.swift; sourceTree = "<group>"; };
+		9C1E47BE2609CDE4005C8019 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F15E0528BF270C5703B67A5 /* Pods_RolloutTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 			children = (
 				9C1E454F260902F3005C8019 /* RolloutTest */,
 				9C1E454E260902F3005C8019 /* Products */,
+				B6A667BFA95137E5E74BD362 /* Pods */,
+				E5641E1D0B4970F798690208 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +74,27 @@
 				9C1E4559260902F6005C8019 /* Assets.xcassets */,
 				9C1E455B260902F6005C8019 /* LaunchScreen.storyboard */,
 				9C1E455E260902F6005C8019 /* Info.plist */,
+				9C1E45692609035A005C8019 /* FeatureFlagging.swift */,
+				9C1E47BE2609CDE4005C8019 /* ChatViewController.swift */,
 			);
 			path = RolloutTest;
+			sourceTree = "<group>";
+		};
+		B6A667BFA95137E5E74BD362 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0536E9A852825E168AFD24EF /* Pods-RolloutTest.debug.xcconfig */,
+				36FAF0A1A8A443819077D04D /* Pods-RolloutTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E5641E1D0B4970F798690208 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51379C7C1C8E2E7D8A779897 /* Pods_RolloutTest.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9C1E4561260902F6005C8019 /* Build configuration list for PBXNativeTarget "RolloutTest" */;
 			buildPhases = (
+				755D1598C58830617ADA0498 /* [CP] Check Pods Manifest.lock */,
 				9C1E4549260902F3005C8019 /* Sources */,
 				9C1E454A260902F3005C8019 /* Frameworks */,
 				9C1E454B260902F3005C8019 /* Resources */,
+				770136DD2DA9386C172B0D12 /* [CP] Embed Pods Frameworks */,
+				74209A68754FBE2E67FC53EA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,6 +165,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		74209A68754FBE2E67FC53EA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RolloutTest/Pods-RolloutTest-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RolloutTest/Pods-RolloutTest-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RolloutTest/Pods-RolloutTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		755D1598C58830617ADA0498 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RolloutTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		770136DD2DA9386C172B0D12 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RolloutTest/Pods-RolloutTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RolloutTest/Pods-RolloutTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RolloutTest/Pods-RolloutTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9C1E4549260902F3005C8019 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +232,8 @@
 				9C1E4555260902F3005C8019 /* ViewController.swift in Sources */,
 				9C1E4551260902F3005C8019 /* AppDelegate.swift in Sources */,
 				9C1E4553260902F3005C8019 /* SceneDelegate.swift in Sources */,
+				9C1E47BF2609CDE4005C8019 /* ChatViewController.swift in Sources */,
+				9C1E456A2609035A005C8019 /* FeatureFlagging.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,17 +377,20 @@
 		};
 		9C1E4562260902F6005C8019 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0536E9A852825E168AFD24EF /* Pods-RolloutTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DGCSBKHH4C;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = RolloutTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.batelle.restream.player.RolloutTest;
+				PRODUCT_BUNDLE_IDENTIFIER = docusign.issue.repl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -302,17 +399,20 @@
 		};
 		9C1E4563260902F6005C8019 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36FAF0A1A8A443819077D04D /* Pods-RolloutTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DGCSBKHH4C;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = RolloutTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.batelle.restream.player.RolloutTest;
+				PRODUCT_BUNDLE_IDENTIFIER = docusign.issue.repl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
